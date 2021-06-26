@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="44.995">
+    <testcase classname="Search Functionality" name="TC01_Iphone Search" time="6.197">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+And user search for iPhone..................................................passed
+Then verify the result has iPhone...........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search Functionality" name="TC02_tea pot Search" time="5.62">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+And user search for tea pot.................................................passed
+Then verify the result has tea pot..........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search Functionality" name="TC03_flower Search" time="7.632">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+And user search for flower..................................................passed
+Then verify the result has flower...........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Multiple_google_search" name="searching_word_capitals" time="5.662">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+Given user search for "paris"...............................................passed
+Then verify the result has "paris"..........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Multiple_google_search" name="searching_word_capitals_2" time="4.707">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+Given user search for "london"..............................................passed
+Then verify the result has "london".........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Multiple_google_search" name="searching_word_capitals_3" time="4.64">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+Given user search for "berlin"..............................................passed
+Then verify the result has "berlin".........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Multiple_google_search" name="searching_word_capitals_4" time="5.716">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+Given user search for "ankara"..............................................passed
+Then verify the result has "ankara".........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Multiple_google_search" name="searching_word_capitals_5" time="4.231">
+        <system-out>
+            <![CDATA[Given user in on the google page............................................passed
+Given user search for "baku"................................................passed
+Then verify the result has "baku"...........................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
