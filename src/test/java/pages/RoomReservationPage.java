@@ -7,10 +7,10 @@ import utilities.Driver;
 
 public class RoomReservationPage {
     public RoomReservationPage(){
-
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(id = "hidden-488")
+
+    @FindBy(className = "hidden-480")
     public WebElement addRoomReservationButton;
 
     @FindBy(id = "IDUser")
@@ -22,42 +22,44 @@ public class RoomReservationPage {
     @FindBy(id = "Price")
     public WebElement price;
 
-    @FindBy(id = "DateStart")
+    @FindBy(id="DateStart")
     public WebElement dateStart;
 
-    @FindBy(id = "DateEnd")
+    @FindBy(id="DateEnd")
     public WebElement dateEnd;
 
-    @FindBy(id = "AdultAmount")
+    @FindBy(id="AdultAmount")
     public WebElement adultAmount;
 
-    @FindBy(id = "ChildrenAmount")
+    @FindBy(id="ChildrenAmount")
     public WebElement childrenAmount;
 
-    @FindBy(id = "ContactNameSurname")
-    public WebElement contactNameSurname;
+    @FindBy(id="ContactNameSurname")
+    public WebElement nameAndSurname;
 
-    @FindBy(id = "ContactPhone")
+    @FindBy(id="ContactPhone")
     public WebElement contactPhone;
 
-    @FindBy(id = "ContactEmail")
+    @FindBy(id="ContactEmail")
     public WebElement contactEmail;
 
-    @FindBy(id = "Notes")
+    @FindBy(id="Notes")
     public WebElement notes;
 
-    @FindBy(id = "uniform-Approved")
-    public WebElement uniformApproved;
+    @FindBy(id="Approved")
+    public WebElement approved;
 
-    @FindBy(id = "uniform-IsPaid")
-    public WebElement uniformIsPaid;
+    @FindBy(id="IsPaid")
+    public WebElement isPaid;
 
-    @FindBy(id = "btnSubmit")
+    @FindBy(id="btnSubmit")
     public WebElement saveButton;
 
-    @FindBy(xpath = "//div[@class='bootbox-body']")
-    public WebElement messageBox;
+    @FindBy(className = "bootbox-body")
+    public WebElement actualSuccessMessage;
 
-    @FindBy(xpath = "(//button[@type='button'])[8]")
+    @FindBy(xpath = "(//button[@type='button'])[last()]")
     public WebElement okButton;
 }
+
+

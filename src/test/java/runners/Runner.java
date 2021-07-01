@@ -18,11 +18,20 @@ dryRun=true is only used to check if anything is missing in the step definition 
 */
 @RunWith(Cucumber.class)
 @CucumberOptions(
+//        html = TYPE OF THE REPORTS
+//        target= REPORT FOLDER
+//        default-cucumber-reports= REPORT NAME
+        plugin = {
+                "html:target/default-cucumber-reports",
+                "json:target/json-report/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@room_reservation_1",
+        tags = "@data_tables",
         dryRun = false
 )
 public class Runner {
 }
+
 
