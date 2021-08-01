@@ -1,10 +1,11 @@
-@google_search_parameters@regression
+@google_search_parameters @regression
 Feature: Finding product on google search
   Background: use is navigate to google page
     Given user in on the google page
 
-   #      Test data = iphone. "" will parametrize this data
+    #      Test data = iphone. "" will parametrize this data
 #      This means this parameter can be any test data
+#  Doc Strings are handy for passing a larger piece of text to a step definition.
   Scenario: TC01_iphone_search
     Given user search for "iPhone"
     Then verify the result has "iPhone"

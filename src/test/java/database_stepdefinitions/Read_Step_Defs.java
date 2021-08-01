@@ -1,4 +1,4 @@
-package stepdefinitions.database_stepdefinitions;
+package database_stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
@@ -8,6 +8,7 @@ import utilities.Driver;
 import java.sql.*;
 
 public class Read_Step_Defs {
+
 
     @Given("user connects to the database")
     public void user_connects_to_the_database() {
@@ -19,6 +20,7 @@ public class Read_Step_Defs {
 
 //        String query = "Select Price from tHOTELROOM"; //Price= column, tHOTELROOM=table  name
         String query=   "Select "+column+" from "+table;
+
 
 //        RUN THAT QUERY USING executeQuery from DBUtils
         DBUtils.executeQuery(query);
@@ -67,8 +69,10 @@ public class Read_Step_Defs {
         System.out.println("LAST DATA : "+lastData);
 
     }
+
     @Given("users gets the value in row {int} in {string} column and verifies the value is {string}")
     public void users_gets_the_value_in_row_in_column_and_verifies_the_value_is(Integer rowNum, String column, String value) throws SQLException {
+
 //        GO TO ROW 5
         DBUtils.getResultset().absolute(rowNum);
 
@@ -76,8 +80,8 @@ public class Read_Step_Defs {
         Object data=DBUtils.getResultset().getObject(column);
 
 //        Verifying the expected data is equal to actual data
-        String expectedData=data.toString();
-        String actualData=value;
+        String actualData=data.toString();
+        String expectedData=value;
         Assert.assertEquals(expectedData,actualData);
 
     }

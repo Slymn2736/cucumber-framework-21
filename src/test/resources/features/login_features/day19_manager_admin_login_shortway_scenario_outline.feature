@@ -1,4 +1,4 @@
-@feature_login @regression
+@feature_login @smoke
 Feature: Manger_login_test
   @manager_login
   Scenario Outline: TC_01_reservation_manager_profile
@@ -8,11 +8,13 @@ Feature: Manger_login_test
     And clicks on login button
     And verify login "<default_page_id>" is displayed
     Then close the application
+
     Examples:
       |manager_id|manager_password|default_page_id|
       |manager   |Manager1!       |manager        |
       |manager2  |Manager2!       |manager2       |
       |manager3  |Manager3!       |manager3       |
+
   @admin_login
   Scenario Outline: TC_02_reservation_admin_profile
     Given user is on the application_login page
@@ -21,7 +23,7 @@ Feature: Manger_login_test
     And clicks on login button
     And verify login "<default_page_id>" is displayed
     Then close the application
+
     Examples:
       |admin_id  |admin_password    |default_page_id|
       |admin     |Techproed123!     |admin         |
-
